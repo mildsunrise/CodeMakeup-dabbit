@@ -21,25 +21,23 @@ The theme itself has been ported to CodeMirror by me, [Xavier Mendez](https://gi
 made available (as all other themes) under a [2-clause BSD](http://opensource.org/licenses/bsd-license), see `LICENSE`.
 
 However, the [Gray Jean](http://subtlepatterns.com/grey-jean/) pattern that is used as background  
-requires you to give credits to [Subtle Patterns](http://subtlepatterns.com). If you don't  
+requires you to give credit to [Subtle Patterns](http://subtlepatterns.com). If you don't  
 like that, you can use the [original noise](https://github.com/LeaVerou/dabblet/blob/8da489da6aaf4d547af58113ceaea544e104b2ce/img/noise.png), but that's less sexy!
 
 ## Modifications
 
-It isn't a perfect imitation, because I:
+It isn't an exact imitation, because:
 
- - Used [Inconsolata](http://www.google.com/webfonts/specimen/Inconsolata), an open-source beautifult monospace font
-   very similar to Monaco (the propietary font only available on Macs). This is  
-   because of three reasons:
+ - I used [Inconsolata](http://www.google.com/webfonts/specimen/Inconsolata), an open-source beautifult monospace font very similar to Monaco  
+   (the propietary font only available on Macs). This is because of various reasons:
    
-   1. This is open-source, the font should also be.
-   2. It's not a good practise to discriminate platforms, especially open-source ones.
-   3. Inconsolata has better angle-brackets and `*`.
-   4. Multiplatform editor (CodeMirror), multiplatform theme (Dabbletted), multiplatform font (Inconsolata).  
+    * This is open-source, the font should also be.
+    * It's not a good practise to discriminate platforms, especially open-source ones.
+    * Inconsolata has better angle-brackets and asterisk.
+    * Multiplatform editor (CodeMirror), multiplatform theme (Dabbit), multiplatform font (Inconsolata).  
       Everything fits.
 
- - Used one of [SubtlePatterns](http://subtlepatterns.com) textures for the  
-   background (Gray Jean), instead of the default noisy pattern.
+ - Used one of [SubtlePatterns](http://subtlepatterns.com) textures for the background (Gray Jean), instead of the default noisy pattern.
  - Fixed some little bugs.
 
 ## How to use
@@ -54,7 +52,7 @@ var editor = CodeMirror.fromTextArea(myTextArea, {theme:'dabbit'});
 ### Editing the theme
 
 You should edit the source files at `src/`; they  
-are written with the fantastic [Stylus](http://learnboost.github.com/stylus) and (NIB)(http://visionmedia.github.com/nib/).
+are written with the fantastic [Stylus](http://learnboost.github.com/stylus) and [NIB](http://visionmedia.github.com/nib/).
 
 Whenever you rename, add or remove files you may  
 need to modify `theme.json` (the theme definition).  
