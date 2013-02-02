@@ -7,13 +7,13 @@
 _use_ or _hack_ on this theme, it's super easy.**
 
 This is the theme [Dabblet](http://dabblet.com) (the fantastic [open-source](https://github.com/LeaVerou/dabblet) design playground)  
-uses. Now ported to CodeMirror, with [little modifications](#modifications).
+uses. Now ported to CodeMirror, with [some modifications](#modifications).
 
 <!-- TODO: screenshot -->
 
 This is a **minimalist** theme. His big, but **invisible gutter** makes you focus  
-on the code instead of the controls. The font size is quite large by default, but  
-you can change that, and shadows & other effects will proportionally scale as well.
+on the code instead of the controls. The font size is quite **large** by default, but  
+you can change that, and shadows & other **effects will proportionally scale** as well.
 
 ## License
 
@@ -73,5 +73,5 @@ You can also launch a webserver to try the theme:
 ./demo
 ```
 
-It'll print the URL you have to browse.
+It'll print the URL you have to browse.  
 Quirk the demo page at `manager/index.blade` and `manager/public/`.
