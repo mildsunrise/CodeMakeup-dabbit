@@ -15,6 +15,15 @@ This is a **minimalist** theme. His big, but **invisible gutter** makes you focu
 on the code instead of the controls. The font size is quite large by default, but  
 you can change that, and shadows & other effects will proportionally scale as well.
 
+## License
+
+The theme itself has been ported to CodeMirror by me, [Xavier Mendez](https://github.com/jmendeth) and is  
+made available (as all other themes) under a [2-clause BSD](http://opensource.org/licenses/bsd-license), see `LICENSE`.
+
+However, the [Gray Jean](http://subtlepatterns.com/grey-jean/) pattern that is used as background  
+requires you to give credits to [Subtle Patterns](http://subtlepatterns.com). If you don't  
+like that, you can use the [original noise](https://github.com/LeaVerou/dabblet/blob/8da489da6aaf4d547af58113ceaea544e104b2ce/img/noise.png), but that's less sexy!
+
 ## Modifications
 
 It isn't a perfect imitation, because I:
