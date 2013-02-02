@@ -1,27 +1,37 @@
-This is a template for kickstarting a CodeMakeup quickly. Steps:
-
- 1. Learn how to edit/write the theme on "How to Use" below.
- 2. Rename `src/MYTHEME.styl` and edit `theme.json` and this README accordingly.
- 3. Don't forget to `./compile` the theme when it's finished!
- 4. Remove this text.
-
-
-
 > This is a member of the [CodeMakeup](https://github.com/jmendeth/CodeMakeup) collection.
 > License, other themes and common facts are listed there.
 
-# My Theme
+# Dabbit
 
 **Read [How to Use](#how-to-use) below for how to launch a _demo server_,  
 _use_ or _hack_ on this theme, it's super easy.**
 
-TODO: Explain this theme (origin, properties, where to use it)...
+This is the theme [Dabblet](http://dabblet.com) (the fantastic [open-source](https://github.com/LeaVerou/dabblet) design playground)  
+uses. Now ported to CodeMirror, with [little modifications](#modifications).
 
-TODO: screenshot here
+<!-- TODO: screenshot -->
 
 This is a **minimalist** theme. His big, but **invisible gutter** makes you focus  
-on the code instead of the controls. The font size is quite large by default,  
-but you can change that, and shadows & other effects will proportionally scale.  
+on the code instead of the controls. The font size is quite large by default, but  
+you can change that, and shadows & other effects will proportionally scale as well.
+
+## Modifications
+
+It isn't a perfect imitation, because I:
+
+ - Used [Inconsolata](http://www.google.com/webfonts/specimen/Inconsolata), an open-source beautifult monospace font
+   very similar to Monaco (the propietary font only available on Macs). This is  
+   because of three reasons:
+   
+   1. This is open-source, the font should also be.
+   2. It's not a good practise to discriminate platforms, especially open-source ones.
+   3. Inconsolata has better angle-brackets and `*`.
+   4. Multiplatform editor (CodeMirror), multiplatform theme (Dabbletted), multiplatform font (Inconsolata).  
+      Everything fits.
+
+ - Used one of [SubtlePatterns](http://subtlepatterns.com) textures for the  
+   background (Gray Jean), instead of the default noisy pattern.
+ - Fixed some little bugs.
 
 ## How to use
 
@@ -29,7 +39,7 @@ The precompiled, ready-to-use stylesheet is on `dist/`.
 Just `<link>` to it on your page, then let CodeMirror use it:
 
 ```javascript
-var editor = CodeMirror.fromTextArea(myTextArea, {theme:'MYTHEME'}); //TODO: adjust this
+var editor = CodeMirror.fromTextArea(myTextArea, {theme:'dabbit'});
 ```
 
 ### Editing the theme
