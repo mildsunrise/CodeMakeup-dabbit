@@ -72,7 +72,14 @@
 
 
   //TOKEN STYLING
-  //TODO
+  .cm-comment
+    color slategray
+  .cm-tag, .cm-atom, .cm-number
+    color #905
+  .cm-string
+    color #690
+  .cm-keyword
+    color #07a
 
   //SELECTION
   .CodeMirror-selected, &.CodeMirror-focused .CodeMirror-selected
@@ -80,6 +87,14 @@
   .CodeMirror-selectedtext
     color white
     text-shadow 0 -1px 1px rgba(153,122,102, 1)
+  
+  //MATCH BRACKETS
+  .CodeMirror-matchingbracket
+    font-weight bold
+    color black
+  .CodeMirror-nonmatchingbracket
+    font-weight bold
+    color #993104
   
   //TODO: scrolling bar
 
