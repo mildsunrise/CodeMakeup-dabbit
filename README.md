@@ -42,12 +42,27 @@ It isn't an exact imitation, because:
 
 ## How to use
 
-The precompiled, ready-to-use stylesheet is on `dist/`.  
-Just `<link>` to it on your page, then let CodeMirror use it:
+**Important:** you need CodeMirror 3.02.01 or higher to use this theme.
+
+The precompiled, ready-to-use stylesheet is on `dist/`, with some other  
+assets. Copy them to your site and `<link>` to the stylesheet.
+
+Also include the module `selection/mark-selection.js` and  
+`selection/active-line.js`. Now configure your CodeMirror that way:
 
 ```javascript
-var editor = CodeMirror.fromTextArea(myTextArea, {theme:'dabbit'});
+var editor = CodeMirror.fromTextArea(myTextArea, {
+  theme: 'dabbit',
+  styleSelectedText: true,
+  styleActiveLine: true,
+  lineWrapping: true,
+  lineNumbers: true
+});
 ```
+
+The first two options are mandatory, and the others are recommended  
+and will make CodeMirror look as the original Dabblet.  
+You're free to experiment with them to customize the editor.
 
 ### Editing the theme
 

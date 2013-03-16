@@ -232,12 +232,17 @@ body
         , meta = $('#metadata');
       var lang = meta.data('lang')
         , theme = meta.data('theme');
-      require(['codemirror/codemirror', 'codemirror/mode/'+lang], function(CodeMirror) {
+      require(['codemirror/codemirror', 'codemirror/mode/'+lang,
+        'codemirror/addon/selection/mark-selection',
+        'codemirror/addon/selection/active-line'], function(CodeMirror) {
         var editor = CodeMirror.fromTextArea(code.get(0), {
-          theme: theme,
-          lineNumbers: true
+          theme: 'dabbit',
+          styleSelectedText: true,
+          styleActiveLine: true,
+          lineNumbers: true,
+          lineWrapping: true
         });
-    
+        
         setTimeout(function() {
           $('#loading').remove();
         }, 700);
