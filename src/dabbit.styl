@@ -1,5 +1,81 @@
 @import 'nib'
 
-.CodeMirror.cm-s-MYTHEME
+// FONTS --change that if you want a different
+//         source (default is Google Webfonts)
 
+/// Inconsolata: 400 and 700
+@import url('http://fonts.googleapis.com/css?family=Inconsolata:400,700');
+
+
+
+.CodeMirror.cm-s-dabbit
+
+  background-image url('gray_jean.png') //TODO: retina
+  &.CodeMirror-focused
+    box-shadow inset .1em .1em .4em rgba(0,0,0, .5)
+
+  font 16px/1.5em Monaco, Consolas, Inconsolata, 'Deja Vu Sans Mono',
+                  'Droid Sans Mono', 'Andale Mono', 'Lucida Console',
+                  monospace //TODO
+  color black
+  text-shadow 0 1px 0 rgba(255,255,255, 1)
+  
+  //SPACING
+  .CodeMirror-sizer
+    padding-left .8em
+
+  //GUTTER & ACTIVE LINE
+  /// Let the gutter have a border
+  .CodeMirror-gutters
+    background-color transparent
+    border-right 0
+  .CodeMirror-lines
+    border-left solid 0.13em rgba(85,33,0, .11) //FIXME: not pixel-perfect
+  /// Only show active line number
+  .CodeMirror-linenumber
+    visibility hidden
+  /**&.CodeMirror-focused**/ .CodeMirror-activeline .CodeMirror-linenumber
+    visibility visible
+  /// Style active line
+  .CodeMirror-activeline
+    .CodeMirror-linebackground
+      //TODO: fake alpha-multiply effect
+      background rgba(153,122,102, 0.08)
+      background linear-gradient(left, rgba(153,122,102, 0.11) 70%, rgba(153, 122,102, 0.04))
+      // a nasty trick to get it span through all the line
+      position absolute
+      left -50px
+      padding-left 50px
+  /// Style the line numbers
+  .CodeMirror-linenumber
+    display inline-block
+    position relative
+    width auto !important
+    height 1.3em
+    min-width .7em
+    padding .1em .6em 0
+    margin 0 .4em 0 -.75em
+    text-align center
+    
+    color rgba(245,242,240, 1)
+    font bold 65%/1.5 sans-serif
+    background-color rgba(153,122,102, .4)
+    box-shadow 0 1px white
+    text-shadow none
+    vertical-align .1em
+    border-radius 999px
+  
+
+
+  //TOKEN STYLING
   //TODO
+
+  //SELECTION
+  .CodeMirror-selected, &.CodeMirror-focused .CodeMirror-selected
+    background-color rgba(153,122,102, .5)
+  .CodeMirror-selectedtext
+    color white
+    text-shadow 0 -1px 1px rgba(153,122,102, 1)
+  
+  //TODO: scrolling bar
+
