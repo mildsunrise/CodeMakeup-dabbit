@@ -1,0 +1,19 @@
+@import url("http://fonts.googleapis.com/css?family=Inconsolata:400,700");
+.CodeMirror.cm-s-dabbit{background-image:url("gray_jean.png");font:16px/1.5em Monaco,Consolas,Inconsolata,'Deja Vu Sans Mono','Droid Sans Mono','Andale Mono','Lucida Console',monospace;color:#000;text-shadow:0 1px 0 #fff;}
+.CodeMirror.cm-s-dabbit.CodeMirror-focused{-webkit-box-shadow:inset .1em .1em .4em rgba(0,0,0,0.5);box-shadow:inset .1em .1em .4em rgba(0,0,0,0.5)}
+.CodeMirror.cm-s-dabbit pre > *{padding:.15em 0}
+.CodeMirror.cm-s-dabbit .CodeMirror-sizer{padding-left:.8em}
+.CodeMirror.cm-s-dabbit .CodeMirror-gutters{background-color:transparent;border-right:0}
+.CodeMirror.cm-s-dabbit .CodeMirror-lines{border-left:solid .13em rgba(85,33,0,0.11)}
+.CodeMirror.cm-s-dabbit .CodeMirror-linenumber{visibility:hidden}
+.CodeMirror.cm-s-dabbit .CodeMirror-activeline .CodeMirror-linenumber{visibility:visible}
+.CodeMirror.cm-s-dabbit .CodeMirror-activeline .CodeMirror-linebackground{background:rgba(153,122,102,0.08);background:-webkit-gradient(linear, left top, right top, color-stop(0.7, rgba(153,122,102,0.11)), color-stop(1, rgba(153,122,102,0.04)));background:-webkit-linear-gradient(left, rgba(153,122,102,0.11) 70%, rgba(153,122,102,0.04) 100%);background:-moz-linear-gradient(left, rgba(153,122,102,0.11) 70%, rgba(153,122,102,0.04) 100%);background:-o-linear-gradient(left, rgba(153,122,102,0.11) 70%, rgba(153,122,102,0.04) 100%);background:-ms-linear-gradient(left, rgba(153,122,102,0.11) 70%, rgba(153,122,102,0.04) 100%);background:linear-gradient(left, rgba(153,122,102,0.11) 70%, rgba(153,122,102,0.04) 100%);position:absolute;left:-50px;padding-left:50px}
+.CodeMirror.cm-s-dabbit .CodeMirror-linenumber{display:inline-block;position:relative;width:auto !important;height:1.3em;min-width:.7em;padding:.1em .6em 0;margin:0 .4em 0 -.75em;text-align:center;color:#f5f2f0;font:bold 65%/1.5 sans-serif;background-color:rgba(153,122,102,0.4);-webkit-box-shadow:0 1px #fff;box-shadow:0 1px #fff;text-shadow:none;vertical-align:.1em;-webkit-border-radius:999px;border-radius:999px}
+.CodeMirror.cm-s-dabbit .cm-comment{color:#778090}
+.CodeMirror.cm-s-dabbit .cm-tag,.CodeMirror.cm-s-dabbit .cm-atom,.CodeMirror.cm-s-dabbit .cm-number{color:#905}
+.CodeMirror.cm-s-dabbit .cm-string{color:#690}
+.CodeMirror.cm-s-dabbit .cm-keyword{color:#07a}
+.CodeMirror.cm-s-dabbit .CodeMirror-selected,.CodeMirror.cm-s-dabbit.CodeMirror-focused .CodeMirror-selected{background-color:rgba(153,122,102,0.5)}
+.CodeMirror.cm-s-dabbit .CodeMirror-selectedtext{color:#fff;text-shadow:0 -1px 1px #997a66}
+.CodeMirror.cm-s-dabbit .CodeMirror-matchingbracket{font-weight:bold;color:#000}
+.CodeMirror.cm-s-dabbit .CodeMirror-nonmatchingbracket{font-weight:bold;color:#993104}
